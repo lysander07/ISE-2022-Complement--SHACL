@@ -6,5 +6,5 @@ This work is shared under the following license:
 
 Contents:
 - Presentation Slides
-- Example RDF graph: nobel.ttl
-- Example SHACL graph: nobel_shacl.ttl
+- nobel.ttl -- example RDF graph 
+- nobel_shacl.ttl -- example SHACL graph 
