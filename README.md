@@ -8,3 +8,5 @@ Contents:
 - Presentation Slides
 - nobel.ttl -- example RDF graph 
 - nobel_shacl.ttl -- example SHACL graph 
+
+This is part of the KIT lecture "Information Service Engineering", Summer Semester 2022.
