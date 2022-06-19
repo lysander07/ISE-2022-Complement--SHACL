@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s: <http://example.org/shapes/> .
+@prefix : <http://example.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+s:Nobel_Prize a sh:NodeShape ;
+  sh:targetClass :Nobel_Prize ;
+  sh:property [sh:path :name ; sh:datatype rdf:langString ; sh:minCount 1] ;
+  sh:property [sh:path :year ; sh:datatype xsd:gYear ; sh:minCount 1 ; sh:maxCount 1] ;
+  sh:property [sh:path :winner ; sh:node s:Person ; sh:minCount 1 ; sh:class :Person] .
+
+s:Nobel_Prize_in_Physics a sh:NodeShape ;
+  sh:node s:Nobel_Prize .
+
+s:Person a sh:NodeShape ;
+  sh:targetClass :Person ;
+  sh:property [sh:path :name ; sh:datatype rdf:langString ; sh:minCount 1] ;
+  sh:property [sh:path :country ; sh:node s:Country ; sh:minCount 1 ] .
+
+s:Country a sh:NodeShape ;
+  sh:targetClass :Country ;
+  sh:property [sh:path :name ; sh:datatype rdf:langString ; sh:minCount 1] .
+

@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://example.org/> .
+
+:Nobel_Prize a owl:Class .
+:Person a owl:Class .
+:Country a owl:Class .
+
+:year a owl:DatatypeProperty ;
+      rdfs:domain owl:Thing ;
+      rdfs:range  xsd:gYear .
+:name a owl:DatatypeProperty ;
+      rdfs:domain owl:Thing ;
+      rdfs:range  rdf:langString .	
+
+:Nobel_Prize_in_Physics rdfs:subClassOf :Nobel_Prize .
+:Physicist rdfs:subClassOf :Occupation .
+:Person owl:disjointWith :Occupation .
+
+:2021_Nobel_Prize_in_Physics a :Nobel_Prize_in_Physics ;
+      :year "2021"^^xsd:gYear ;
+      :winner :Syukuro_Manabe, :Klaus_Hasselmann, :Giorgio_Pasari . #;
+#      :name "2021 Nobel Prize in Physics"^^rdf:langString .
+
+:Syukuro_Manabe a :Person ;
+      :name "Syukuro Manabe"^^rdf:langString ;
+      :country :USA .
+
+#:Giorgio_Pasari a :Person ;
+:Giorgio_Pasari a :Physicist ;
+      :name "Giorgio Pasari"^^rdf:langString ;
+      :country :Italy .
+
+:Klaus_Hasselmann a :Person ;
+      :name "Klaus_Hasselmann"^^rdf:langString ;
+      :country :Germany .
+
+
+:USA a :Country ;
+      :name "USA"^^rdf:langString .
+:Italy a :Country ;
+      :name "Italy"^^rdf:langString .
+:Germany a :Country ;
+      :name "Germany"^^rdf:langString .
