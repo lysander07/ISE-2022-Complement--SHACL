@@ -1,2 +1,10 @@
 # ISE-2022-Complement--SHACL
-Material for the ISE 2022 complementary lecture on Semantic Web Quality Assurance with SHACL
+Material for the ISE 2022 complementary lecture 09E -- Knowledge Graphs 5 -- Quality Assurance with SHACL
+
+This work is shared under the following license: 
+[Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+Contents:
+- Presentation Slides
+- Example RDF graph: nobel.ttl
+- Example SHACL graph: nobel_shacl.ttl
