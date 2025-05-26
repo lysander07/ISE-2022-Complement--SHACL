@@ -1,4 +1,4 @@
-# ISE-2022-2024Complement -- Quality Assurance with SHACL
+# ISE-2022-2025 -- Quality Assurance with SHACL
 Material for 
 - ISE 2022 complementary lecture 09E for Knowledge Graphs 5 -- Quality Assurance with SHACL and
 - ISE 2023 -- Knowledge Graphs 4 -- Quality Assurance with SHACL Constraints
